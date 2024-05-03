@@ -181,7 +181,9 @@ body {
   background: url("../images/formula.png") no-repeat center;
   background-size: cover;
   padding: 32px;
-  margin-bottom: 64px;
+  margin-bottom: 15px;
+  min-height: 200px;
+  position: relative;
 }
 #es-elseve.es-elseve .es-formula__wrapper {
   padding: 32px 16px;
@@ -230,6 +232,9 @@ body {
   margin-bottom: 32px;
   font-weight: 700;
   line-height: 1;
+  position: absolute;
+  bottom: 10%;
+  left: 2%;
 }
 #es-elseve.es-elseve .es-formula__subtitle span {
   position: relative;
@@ -251,6 +256,59 @@ body {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+#es-elseve.es-elseve .es-hair {
+  background: url(../images/hair.png) no-repeat center;
+  background-size: cover;
+  padding: 32px;
+  margin-bottom: 15px;
+  position: relative;
+  min-height: 200px;
+}
+#es-elseve.es-elseve .es-hair__decoration-title {
+  display: none;
+}
+#es-elseve.es-elseve .es-hair__title {
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+  max-width: 250px;
+  font-size: 14px;
+  text-align: right;
+}
+#es-elseve.es-elseve .es-hair__title--normal {
+  font-weight: 400;
+}
+#es-elseve.es-elseve .es-metamorphosis {
+  background: url(../images/metamorphosis-bg.png) no-repeat center;
+  background-size: cover;
+  padding: 32px;
+  margin-bottom: 15px;
+  position: relative;
+  min-height: 200px;
+}
+#es-elseve.es-elseve .es-metamorphosis__title {
+  position: absolute;
+  bottom: 10%;
+  right: 3%;
+  max-width: 250px;
+  font-size: 14px;
+  text-align: right;
+}
+#es-elseve.es-elseve .es-metamorphosis__title sup {
+  font-size: 14px;
+}
+#es-elseve.es-elseve .es-metamorphosis__title--normal {
+  font-weight: 400;
+}
+#es-elseve.es-elseve .es-metamorphosis__disclaimer {
+  position: absolute;
+  display: inline-block;
+  bottom: 3%;
+  right: 2%;
+  font-size: 6px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 #es-elseve.es-elseve .es-info {
   margin-bottom: 64px;
@@ -343,15 +401,12 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-size: 14px;
+  font-size: 13px;
 }
 #es-elseve.es-elseve .es-info__text--disc {
   font-size: 13px;
 }
 #es-elseve.es-elseve .es-info__item {
-  display: flex;
-  gap: 8px;
-  align-items: center;
   margin-bottom: 5px;
 }
 #es-elseve.es-elseve .es-info__line {
@@ -399,6 +454,7 @@ body {
 }
 #es-elseve.es-elseve .es-ba__label {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   line-height: inherit;
   color: #fff;
@@ -407,14 +463,22 @@ body {
   font-size: 11px;
   position: absolute;
   bottom: 0;
-  width: 70px;
   text-align: center;
-  padding: 4px 16px;
   font-weight: 700;
   text-transform: uppercase;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
 }
-#es-elseve.es-elseve .es-ba__label:last-child {
-  right: 0;
+#es-elseve.es-elseve .es-ba__label--before {
+  left: 30%;
+}
+#es-elseve.es-elseve .es-ba__label--after {
+  left: 55%;
+}
+#es-elseve.es-elseve .es-ba__label--before-3 {
+  left: 35%;
+}
+#es-elseve.es-elseve .es-ba__label--after-3 {
+  left: 60%;
 }
 #es-elseve.es-elseve .es-ba__img {
   max-width: 100%;
@@ -422,6 +486,14 @@ body {
   margin: 0 auto;
   transition: all 0.3s;
   max-height: 406px;
+  width: 300px;
+}
+#es-elseve.es-elseve .es-ba__disclaimer {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 6px;
+  text-align: right;
+  margin-right: 5%;
 }
 #es-elseve.es-elseve .es-cross {
   padding: 0 32px;
@@ -558,6 +630,41 @@ body {
   text-transform: uppercase;
   font-weight: 200;
 }
+@media screen and (min-width: 500px) {
+  #es-elseve.es-elseve .es-formula {
+    min-height: 350px;
+    background: url(../images/formula.png) no-repeat 50% 66%;
+    background-size: cover;
+    min-height: 442px;
+  }
+  #es-elseve.es-elseve .es-formula__subtitle {
+    font-size: 25px;
+    left: 5%;
+  }
+  #es-elseve.es-elseve .es-hair {
+    background-size: cover;
+    min-height: 442px;
+  }
+  #es-elseve.es-elseve .es-hair__title {
+    max-width: 350px;
+    font-size: 25px;
+  }
+  #es-elseve.es-elseve .es-metamorphosis {
+    background-size: cover;
+    min-height: 442px;
+  }
+  #es-elseve.es-elseve .es-metamorphosis__title {
+    max-width: 400px;
+    font-size: 25px;
+  }
+  #es-elseve.es-elseve .es-metamorphosis__disclaimer {
+    bottom: 5%;
+    font-size: 8px;
+  }
+  #es-elseve.es-elseve .es-ba__disclaimer {
+    font-size: 8px;
+  }
+}
 @media screen and (min-width: 620px) {
   #es-elseve.es-elseve .es-nav {
     flex-direction: row;
@@ -570,7 +677,11 @@ body {
     width: 200px;
   }
   #es-elseve.es-elseve .es-formula__subtitle {
-    font-size: 25px;
+    left: 7%;
+  }
+  #es-elseve.es-elseve .es-hair__title {
+    max-width: 300px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 760px) {
@@ -648,8 +759,9 @@ body {
     font-size: 30px;
   }
   #es-elseve.es-elseve .es-formula__subtitle span {
-    font-size: 60px;
-    top: 6px;
+    font-size: 50px;
+    top: 1px;
+    font-weight: bold;
   }
   #es-elseve.es-elseve .es-info {
     position: relative;
@@ -689,7 +801,8 @@ body {
     font-size: 30px;
   }
   #es-elseve.es-elseve .es-info__name {
-    font-size: 28px;
+    margin-bottom: 20px;
+    font-size: 21px;
   }
   #es-elseve.es-elseve .es-ba__title {
     font-size: 30px;
@@ -778,8 +891,8 @@ body {
     transform: translateX(-50%);
     background: #df0b66;
   }
-  #es-elseve.es-elseve .es-formula {
-    min-height: 350px;
+  #es-elseve.es-elseve .es-formula__subtitle {
+    left: 12%;
   }
   #es-elseve.es-elseve .es-formula__img-description-1 {
     position: absolute;
@@ -818,6 +931,35 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background: #df0b66;
+  }
+  #es-elseve.es-elseve .es-hair__title {
+    max-width: 450px;
+    font-size: 30px;
+  }
+  #es-elseve.es-elseve .es-metamorphosis__title {
+    max-width: 500px;
+    font-size: 30px;
+    bottom: 18%;
+    right: 5%;
+  }
+  #es-elseve.es-elseve .es-metamorphosis__disclaimer {
+    right: 5%;
+  }
+  #es-elseve.es-elseve .es-ba {
+    position: relative;
+  }
+  #es-elseve.es-elseve .es-ba__title {
+    font-size: 32px;
+    position: absolute;
+    z-index: 1;
+    top: 44%;
+    left: 30.3%;
+    transform: translate(-20%, -50%);
+    color: #fff;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  }
+  #es-elseve.es-elseve .es-ba__title sup {
+    font-size: 18px;
   }
 }
 

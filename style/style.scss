@@ -216,7 +216,9 @@ $black: #1d1d1b;
     background: url('../images/formula.png') no-repeat center;
     background-size: cover;
     padding: 32px;
-    margin-bottom: 64px;
+    margin-bottom: 15px;
+    min-height: 200px;
+    position: relative;
     &__wrapper {
       // background: rgba(245, 245, 245, 0.8);
       padding: 32px 16px;
@@ -265,6 +267,9 @@ $black: #1d1d1b;
       margin-bottom: 32px;
       font-weight: 700;
       line-height: 1;
+      position: absolute;
+      bottom: 10%;
+      left: 2%;
     }
     &__subtitle span {
       position: relative;
@@ -286,6 +291,68 @@ $black: #1d1d1b;
       max-width: 100%;
       display: block;
       margin: 0 auto;
+    }
+  }
+
+  .es-hair {
+    background: url(../images/hair.png) no-repeat center;
+    background-size: cover;
+    padding: 32px;
+    margin-bottom: 15px;
+    position: relative;
+    min-height: 200px;
+
+    &__decoration-title {
+      display: none;
+    }
+
+    &__title {
+      position: absolute;
+      bottom: 0;
+      right: 3%;
+      max-width: 250px;
+      font-size: 14px;
+      text-align: right;
+
+      &--normal {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .es-metamorphosis {
+    background: url(../images/metamorphosis-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 32px;
+    margin-bottom: 15px;
+    position: relative;
+    min-height: 200px;
+
+    &__title {
+      position: absolute;
+      bottom: 10%;
+      right: 3%;
+      max-width: 250px;
+      font-size: 14px;
+      text-align: right;
+
+      & sup {
+        font-size: 14px;
+      }
+
+      &--normal {
+        font-weight: 400;
+      }
+    }
+
+    &__disclaimer {
+      position: absolute;
+      display: inline-block;
+      bottom: 3%;
+      right: 2%;
+      font-size: 6px;
+      text-transform: uppercase;
+      font-weight: bold;
     }
   }
 
@@ -375,15 +442,12 @@ $black: #1d1d1b;
       color: inherit;
       font-family: inherit;
       font-weight: inherit;
-      font-size: 14px;
+      font-size: 13px;
       &--disc {
         font-size: 13px;
       }
     }
     &__item {
-      display: flex;
-      gap: 8px;
-      align-items: center;
       margin-bottom: 5px;
     }
     &__line {
@@ -432,6 +496,7 @@ $black: #1d1d1b;
     }
     &__label {
       margin: 0;
+      margin-bottom: 10px;
       padding: 0;
       line-height: inherit;
       color: #fff;
@@ -440,14 +505,31 @@ $black: #1d1d1b;
       font-size: 11px;
       position: absolute;
       bottom: 0;
-      width: 70px;
+      // width: 70px;
       text-align: center;
-      padding: 4px 16px;
+      // padding: 4px 16px;
       font-weight: 700;
       text-transform: uppercase;
+      text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+
+      &--before {
+        left: 30%;
+      }
+
+      &--after {
+        left: 55%;
+      }
+
+      &--before-3 {
+        left: 35%;
+      }
+
+      &--after-3 {
+        left: 60%;
+      }
     }
     &__label:last-child {
-      right: 0;
+      // right: 0;
     }
     &__img {
       max-width: 100%;
@@ -455,6 +537,14 @@ $black: #1d1d1b;
       margin: 0 auto;
       transition: all 0.3s;
       max-height: 406px;
+      width: 300px;
+    }
+    &__disclaimer {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 6px;
+      text-align: right;
+      margin-right: 5%;
     }
   }
 
@@ -596,6 +686,54 @@ $black: #1d1d1b;
     }
   }
 
+  @media screen and (min-width: 500px) {
+    .es-formula {
+      min-height: 350px;
+      background: url(../images/formula.png) no-repeat 50% 66%;
+      background-size: cover;
+      min-height: 442px;
+
+      &__subtitle {
+        font-size: 25px;
+        left: 5%;
+      }
+    }
+
+    .es-hair {
+      // min-height: 350px;
+      // background: url(../images/hair.png) no-repeat 50% 66%;
+      background-size: cover;
+      min-height: 442px;
+
+      &__title {
+        max-width: 350px;
+        font-size: 25px;
+      }
+    }
+
+    .es-metamorphosis {
+      // min-height: 350px;
+      // background: url(../images/hair.png) no-repeat 50% 66%;
+      background-size: cover;
+      min-height: 442px;
+
+      &__title {
+        max-width: 400px;
+        font-size: 25px;
+      }
+
+      &__disclaimer {
+        bottom: 5%;
+        font-size: 8px;
+      }
+    }
+
+    .es-ba {
+      &__disclaimer {
+        font-size: 8px;
+      }
+    }
+  }
   @media screen and (min-width: 620px) {
     .es-nav {
       flex-direction: row;
@@ -612,7 +750,14 @@ $black: #1d1d1b;
 
     .es-formula {
       &__subtitle {
-        font-size: 25px;
+        left: 7%;
+      }
+    }
+
+    .es-hair {
+      &__title {
+        max-width: 300px;
+        font-size: 20px;
       }
     }
   }
@@ -701,11 +846,11 @@ $black: #1d1d1b;
       }
       &__subtitle {
         font-size: 30px;
-        // color: $pink;
       }
       &__subtitle span {
-        font-size: 60px;
-        top: 6px;
+        font-size: 50px;
+        top: 1px;
+        font-weight: bold;
       }
     }
     .es-info {
@@ -745,7 +890,8 @@ $black: #1d1d1b;
         font-size: 30px;
       }
       &__name {
-        font-size: 28px;
+        margin-bottom: 20px;
+        font-size: 21px;
       }
     }
 
@@ -851,8 +997,14 @@ $black: #1d1d1b;
         }
       }
     }
+
     .es-formula {
-      min-height: 350px;
+      // position: relative;
+
+      &__subtitle {
+        left: 12%;
+      }
+
       &__img-description-1 {
         position: absolute;
         display: block;
@@ -897,7 +1049,57 @@ $black: #1d1d1b;
           background: $pink;
         }
       }
+      // &__subtitle {
+      //   position: absolute;
+      //   bottom: 10%;
+      //   left: 10%;
+      // }
     }
+
+    .es-hair {
+      &__title {
+        max-width: 450px;
+        font-size: 30px;
+      }
+    }
+
+    .es-metamorphosis {
+      &__title {
+        max-width: 500px;
+        font-size: 30px;
+        bottom: 18%;
+        right: 5%;
+      }
+
+      &__disclaimer {
+        right: 5%;
+      }
+    }
+
+    .es-ba {
+      position: relative;
+      &__title {
+        font-size: 32px;
+        position: absolute;
+        z-index: 1;
+        top: 44%;
+        left: 30.3%;
+        transform: translate(-20%, -50%);
+        color: #fff;
+        text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+
+        & sup {
+          font-size: 18px;
+        }
+      }
+    }
+
+    // .es-hair {
+    //   // min-height: 350px;
+    //   // background: url(../images/hair.png) no-repeat 50% 66%;
+    //   background-size: cover;
+    //   min-height: 442px;
+    // }
   }
 }
 
