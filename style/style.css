@@ -59,6 +59,25 @@ body {
 }
 #es-elseve.es-elseve .es-kv__title--red {
   color: #df0b66;
+  background: linear-gradient(90deg, rgb(239, 74, 153) 0%, rgb(239, 74, 153) 35%, rgb(251, 184, 211) 39%, rgb(239, 74, 153) 44%, rgb(239, 74, 153) 67%, rgb(239, 74, 153) 91%, rgb(251, 184, 211) 96%, rgb(239, 74, 153) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#es-elseve.es-elseve .es-kv__title-description {
+  display: block;
+  margin: 0 auto;
+  max-width: 140px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+}
+#es-elseve.es-elseve .es-kv__title-description--pink {
+  color: #df0b66;
+  background: linear-gradient(90deg, rgb(239, 74, 153) 0%, rgb(239, 74, 153) 39%, rgb(251, 184, 211) 44%, rgb(251, 184, 211) 67%, rgb(239, 74, 153) 91%, rgb(251, 184, 211) 96%, rgb(239, 74, 153) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #es-elseve.es-elseve .es-kv__img-description-1, #es-elseve.es-elseve .es-kv__img-description-2 {
   display: none;
@@ -66,6 +85,7 @@ body {
 #es-elseve.es-elseve .es-kv__subtitle {
   letter-spacing: -1px;
   font-size: 14px;
+  color: #fff;
 }
 #es-elseve.es-elseve .es-kv__disclaimer {
   letter-spacing: -1px;
@@ -73,6 +93,7 @@ body {
   font-weight: bold;
   font-size: 10px;
   text-transform: initial;
+  color: #fff;
 }
 #es-elseve.es-elseve .es-kv__title-group {
   align-self: flex-end;
@@ -92,7 +113,7 @@ body {
 }
 #es-elseve.es-elseve .es-kv__branding {
   padding: 16px;
-  padding-top: 92px;
+  padding-top: 30px;
   max-width: 320px;
   margin: 0 auto;
 }
@@ -112,6 +133,36 @@ body {
   opacity: 0;
   animation: slidedown 0.8s ease forwards;
   animation-delay: 0.3s;
+}
+#es-elseve.es-elseve .es-kv__brand-item {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 12px;
+}
+#es-elseve.es-elseve .es-kv__brand-item-title {
+  display: block;
+  margin: 10px auto;
+  padding: 2px 5px;
+  max-width: 185px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #df0b66;
+}
+#es-elseve.es-elseve .es-kv__brand-item-description {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
 }
 #es-elseve.es-elseve .es-kv__text {
   margin: 0;
@@ -189,9 +240,6 @@ body {
   padding: 32px 16px;
   border-radius: 12px;
 }
-#es-elseve.es-elseve .es-formula__wrapper:hover img {
-  /* transform: translateY(-24px); */
-}
 #es-elseve.es-elseve .es-formula__content {
   z-index: 1;
   position: relative;
@@ -199,7 +247,6 @@ body {
 #es-elseve.es-elseve .es-formula__image img {
   display: none;
   max-height: 444px;
-  /* transition: all 0.6s; */
 }
 #es-elseve.es-elseve .es-formula__img-description-1 {
   display: none;
@@ -670,9 +717,6 @@ body {
     flex-direction: row;
     justify-content: center;
   }
-  #es-elseve.es-elseve .es-cross__products {
-    /* justify-content: space-between; */
-  }
   #es-elseve.es-elseve .es-cross__product {
     width: 200px;
   }
@@ -695,6 +739,9 @@ body {
     display: flex;
     flex-flow: row-reverse;
     justify-content: space-between;
+  }
+  #es-elseve.es-elseve .es-kv__title-description {
+    margin-left: 0;
   }
   #es-elseve.es-elseve .es-kv__text {
     font-size: 15px;
@@ -743,7 +790,6 @@ body {
     transform: translateY(-50%);
   }
   #es-elseve.es-elseve .es-formula__image img {
-    /* max-height: none; */
     margin-left: -35px;
   }
   #es-elseve.es-elseve .es-formula__content {
@@ -814,19 +860,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-  }
-  #es-elseve.es-elseve .es-cross__product {
-    /* justify-content: flex-end; */
-  }
-  #es-elseve.es-elseve .es-cross__img--1 {
-    /* margin-bottom: -35px; */
-  }
-  #es-elseve.es-elseve .es-cross__img--2 {
-    /* margin-bottom: -50px; */
-  }
-  #es-elseve.es-elseve .es-cross__img--4 {
-    /* margin-bott
-    om: -20px; */
   }
   #es-elseve.es-elseve .es-footer__container {
     flex-flow: row;
