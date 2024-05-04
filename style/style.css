@@ -70,7 +70,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   color: #fff;
 }
 #es-elseve.es-elseve .es-kv__title-description--pink {
@@ -709,10 +709,10 @@ body {
   }
   #es-elseve.es-elseve .es-metamorphosis__disclaimer {
     bottom: 5%;
-    font-size: 8px;
+    font-size: 7px;
   }
   #es-elseve.es-elseve .es-ba__disclaimer {
-    font-size: 8px;
+    font-size: 7px;
   }
 }
 @media screen and (min-width: 620px) {
@@ -799,7 +799,7 @@ body {
   #es-elseve.es-elseve .es-kv__title {
     padding-left: 45px;
     background: none;
-    font-size: 28px;
+    font-size: 30px;
     letter-spacing: -1px;
     line-height: 1;
   }
@@ -1013,6 +1013,7 @@ body {
   #es-elseve.es-elseve .es-hair__title {
     max-width: 450px;
     font-size: 30px;
+    line-height: 1.1;
   }
   #es-elseve.es-elseve .es-metamorphosis__title {
     max-width: 500px;

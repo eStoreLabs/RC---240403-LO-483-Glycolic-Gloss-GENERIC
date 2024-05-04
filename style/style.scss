@@ -106,7 +106,7 @@ $black: #1d1d1b;
       margin-top: 20px;
       margin-bottom: 20px;
       text-align: center;
-      font-size: 22px;
+      font-size: 18px;
       color: #fff;
 
       &--pink {
@@ -790,13 +790,13 @@ $black: #1d1d1b;
 
       &__disclaimer {
         bottom: 5%;
-        font-size: 8px;
+        font-size: 7px;
       }
     }
 
     .es-ba {
       &__disclaimer {
-        font-size: 8px;
+        font-size: 7px;
       }
     }
   }
@@ -896,7 +896,7 @@ $black: #1d1d1b;
       &__title {
         padding-left: 45px;
         background: none;
-        font-size: 28px;
+        font-size: 30px;
         letter-spacing: -1px;
         line-height: 1;
       }
@@ -1142,6 +1142,7 @@ $black: #1d1d1b;
       &__title {
         max-width: 450px;
         font-size: 30px;
+        line-height: 1.1;
       }
     }
 
