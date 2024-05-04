@@ -191,15 +191,15 @@ $black: #1d1d1b;
       display: block;
       text-transform: uppercase;
       text-align: center;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 5px;
+      margin-bottom: 0px;
       font-weight: 600;
-      font-size: 12px;
+      font-size: 9px;
     }
 
     &__brand-item-title {
       display: block;
-      margin: 10px auto;
+      margin: 5px auto;
       padding: 2px 5px;
       max-width: 185px;
       text-transform: uppercase;
@@ -217,7 +217,7 @@ $black: #1d1d1b;
       margin-top: 10px;
       margin-bottom: 10px;
       font-weight: 600;
-      font-size: 16px;
+      font-size: 12px;
     }
     &__text {
       margin: 0;
@@ -634,8 +634,11 @@ $black: #1d1d1b;
     &__products {
       display: flex;
       flex-wrap: wrap;
+      gap: 10px;
       align-items: flex-end;
       justify-content: center;
+      max-width: 450px;
+      margin: 0 auto;
     }
     &__product {
       width: 264px;
@@ -815,6 +818,51 @@ $black: #1d1d1b;
     }
 
     .es-hair {
+      position: relative;
+
+      &__decoration-title--1,
+      &__decoration-title--2 {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+      &__decoration-title--1 {
+        position: absolute;
+        left: 5%;
+        top: 22%;
+
+        &::after {
+          position: absolute;
+          content: '';
+          top: 22px;
+          left: 12px;
+          width: 95%;
+          height: 109px;
+          max-width: 100%;
+          background: url(../images/line-1.png) no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &__decoration-title--2 {
+        position: absolute;
+        right: 10%;
+        top: 45%;
+
+        &::after {
+          position: absolute;
+          content: '';
+          top: -44px;
+          left: 2px;
+          width: 95%;
+          height: 109px;
+          max-width: 100%;
+          background: url(../images/line-2.png) no-repeat;
+          background-size: contain;
+        }
+      }
       &__title {
         max-width: 300px;
         font-size: 20px;
@@ -860,8 +908,8 @@ $black: #1d1d1b;
       }
       &__branding {
         position: absolute;
-        left: 3%;
-        top: 5%;
+        right: 3%;
+        top: 4%;
         padding: 0;
         z-index: 1;
         width: 240px;
@@ -962,6 +1010,7 @@ $black: #1d1d1b;
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        max-width: 600px;
       }
     }
     .es-footer {
@@ -1087,11 +1136,6 @@ $black: #1d1d1b;
           background: $pink;
         }
       }
-      // &__subtitle {
-      //   position: absolute;
-      //   bottom: 10%;
-      //   left: 10%;
-      // }
     }
 
     .es-hair {
@@ -1129,6 +1173,12 @@ $black: #1d1d1b;
         & sup {
           font-size: 18px;
         }
+      }
+    }
+
+    .es-cross {
+      &__products {
+        max-width: none;
       }
     }
   }
