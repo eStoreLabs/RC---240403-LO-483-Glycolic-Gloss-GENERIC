@@ -72,6 +72,17 @@ body {
   text-align: center;
   font-size: 18px;
   color: #fff;
+  position: relative;
+}
+#es-elseve.es-elseve .es-kv__title-description::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 58px;
+  top: -8px;
+  left: 0%;
+  background: url("../images/lines.png") no-repeat;
+  background-size: contain;
 }
 #es-elseve.es-elseve .es-kv__title-description--pink {
   color: #df0b66;
