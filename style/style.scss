@@ -1195,6 +1195,20 @@ $black: #1d1d1b;
       }
     }
   }
+
+  @media screen and (min-width: 1300px) {
+    .es-kv {
+      background-position: -70px;
+    }
+    .es-kv__imgPackshot {
+      width: 270px;
+    }
+
+    .es-kv__packshot {
+      bottom: -8px;
+      right: 6%;
+    }
+  }
 }
 
 @media screen and (min-width: 760px) {
