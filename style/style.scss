@@ -535,6 +535,12 @@ $black: #1d1d1b;
     &__line {
       display: none;
     }
+    &__disclaimer {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 10px;
+      text-transform: uppercase;
+    }
   }
 
   .es-ba {
